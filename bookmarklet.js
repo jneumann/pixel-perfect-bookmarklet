@@ -53,7 +53,7 @@
 				var node = document.createElement( "div" );
 				node.id = "pixel-perfect-container";
 				node.innerHTML = '' +
-'	<link rel="stylesheet" type="text/css" href="https://dsheiko.github.io/pixel-perfect-bookmarklet/style.css">' +
+'	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jneumann/pixel-perfect-bookmarklet/master/style.css">' +
 '		<div class="pixel-perfect-panel" draggable="true">' +
 '		<div>' +
 '			<a class="pixel-perfect-panel-close">Close</a>' +
@@ -75,9 +75,6 @@
 '						<label>opacity:</label><input type="range" min="0" max="1" step="0.05" name="opacity" class="pixel-perfect-overlay-opacity" />' +
 '					</fieldset>' +
 '				</form>' +
-'			</div>' +
-'			<div class="pixel-perfect-panel-footer" draggable="true">' +
-'				<a href="https://dsheiko.github.io/pixel-perfect-bookmarklet/">Pixel Perfect Bookmarklet</a>' +
 '			</div>' +
 '		</div>' +
 '	</div>' +
@@ -271,8 +268,8 @@
 						 * @property {Node} opacity
 						 */
 						overlaySettings = {
-							top: container.querySelector( ".pixel-perfect-overlay-top" ),
-							left: container.querySelector( ".pixel-perfect-overlay-left" ),
+							top: 0,
+							left: 0,
 							opacity: container.querySelector( ".pixel-perfect-overlay-opacity" )
 						},
 						/** @type {Node} */

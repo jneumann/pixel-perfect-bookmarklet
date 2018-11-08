@@ -9,7 +9,8 @@
 		cursor: pointer;
 	}
 	#pixel-perfect-container .pixel-perfect-overlay {
-		position: absolute;
+		position: relative;
+    margin: auto;
 		display: block;
 		top: 0;
 		left: 0;
